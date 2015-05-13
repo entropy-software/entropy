@@ -1,0 +1,94 @@
+/* line 1, source/style.scss */
+html, body, .container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, source/style.scss */
+body {
+  min-width: 320px;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #393939;
+}
+
+/* line 17, source/style.scss */
+a {
+  color: #aaa;
+  text-decoration: none;
+}
+/* line 21, source/style.scss */
+a:hover {
+  color: #000;
+}
+
+/* line 26, source/style.scss */
+.container {
+  width: 100%;
+  box-shadow: 0px -5px 0 0px #18BDBD inset, 0px 5px 0 0px #18BDBD inset;
+}
+/* line 30, source/style.scss */
+.container .logo {
+  width: 541px;
+  height: 126px;
+  padding: 0px 30px;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  margin: -32px 0 0 -302px;
+  background: #fff url(../img/logo.jpg) no-repeat center center;
+  text-indent: -9999px;
+}
+/* line 41, source/style.scss */
+.container .logo:before {
+  content: '';
+  position: fixed;
+  left: 30px;
+  right: 30px;
+  height: 1px;
+  background: rgba(57, 57, 57, 0.3);
+  top: 49%;
+  z-index: -1;
+}
+
+/* iPhone 6 in landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  /* line 59, source/style.scss */
+  .container .floater .logo:before {
+    top: 52%;
+  }
+}
+/* iPhone 6 in portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  /* line 72, source/style.scss */
+  .container .floater .logo:before {
+    top: 48%;
+  }
+}
+/* iPhone 6 Plus in landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+  /* line 85, source/style.scss */
+  .container .floater .logo:before {
+    top: 51%;
+  }
+}
+/* iPhone 5 & 5S in landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  /* line 98, source/style.scss */
+  .container .floater .logo:before {
+    top: 51%;
+  }
+}
+/* iPhone 5 & 5S in portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* line 111, source/style.scss */
+  .container .floater .logo:before {
+    top: 48%;
+  }
+}
